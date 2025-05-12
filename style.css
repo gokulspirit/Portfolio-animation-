@@ -38,89 +38,101 @@ header {
 }
 
 
-
-/* Base Styles */
-body {
+/* Reset & Base Styling */
+* {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0a0a0a;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0c0c0c;
+  color: #e0e0e0;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
+a {
+  color: #ff3c3c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6666;
+}
+
 section {
-  padding: 80px 20px;
+  padding: 80px 30px;
   max-width: 1200px;
   margin: auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #121212;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(255, 60, 60, 0.1);
 }
 
-/* Section Titles */
+/* Headings */
 section h2 {
-  font-size: 2.5rem;
-  color: #ff3c3c;
+  font-size: 2.8rem;
   text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-section h3 {
-  font-size: 1.8rem;
+  margin-bottom: 40px;
   color: #ff3c3c;
-  margin-top: 20px;
+  letter-spacing: 1px;
+  position: relative;
 }
 
+section h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #ff3c3c;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraphs */
 section p {
   font-size: 1.1rem;
-  line-height: 1.7;
-  color: #ddd;
+  margin-bottom: 15px;
+  color: #ccc;
 }
 
 /* Services */
 #services .service-item {
   background: #1a1a1a;
-  border: 1px solid #333;
   padding: 25px;
+  border: 1px solid #2a2a2a;
   border-radius: 12px;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, border-color 0.3s;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
 #services .service-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: #ff3c3c;
-}
-
-#services a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #ff3c3c;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#services a:hover {
-  text-decoration: underline;
 }
 
 /* Skills */
 #skills ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
 
 #skills li {
-  background-color: #1f1f1f;
-  padding: 15px;
+  background: #1e1e1e;
+  padding: 15px 10px;
   border-radius: 8px;
   text-align: center;
-  font-weight: 600;
+  font-weight: bold;
   border: 1px solid #333;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 #skills li:hover {
@@ -128,16 +140,21 @@ section p {
   color: #000;
 }
 
-/* Education & Experience */
-#education, #experience ul {
-  padding-left: 20px;
+/* Education / Experience Lists */
+#education ul, #experience ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-#experience li {
-  margin-bottom: 10px;
+#education li, #experience li {
+  background: #1b1b1b;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 4px solid #ff3c3c;
+  border-radius: 6px;
 }
 
-/* Contact */
+/* Contact Form */
 #contact form {
   max-width: 600px;
   margin: auto;
@@ -147,13 +164,13 @@ section p {
 
 #contact input,
 #contact textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  background-color: #1a1a1a;
-  border: 1px solid #444;
-  border-radius: 5px;
+  background: #181818;
+  border: 1px solid #333;
   color: #fff;
-  resize: vertical;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: border-color 0.3s;
 }
 
 #contact input:focus,
@@ -163,21 +180,30 @@ section p {
 }
 
 #contact button {
-  padding: 12px;
-  background-color: #ff3c3c;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  background: #ff3c3c;
   color: #000;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 #contact button:hover {
-  background-color: #e62e2e;
+  background: #e22d2d;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
 
+  section h2 {
+    font-size: 2.2rem;
+  }
+}
 
 
 
