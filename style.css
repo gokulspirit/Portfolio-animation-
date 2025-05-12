@@ -39,7 +39,143 @@ header {
 
 
 
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  scroll-behavior: smooth;
+}
 
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.5rem;
+  color: #ff3c3c;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  color: #ff3c3c;
+  margin-top: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* Services */
+#services .service-item {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+#services .service-item:hover {
+  transform: translateY(-5px);
+  border-color: #ff3c3c;
+}
+
+#services a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff3c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#services a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #333;
+  transition: background-color 0.3s;
+}
+
+#skills li:hover {
+  background-color: #ff3c3c;
+  color: #000;
+}
+
+/* Education & Experience */
+#education, #experience ul {
+  padding-left: 20px;
+}
+
+#experience li {
+  margin-bottom: 10px;
+}
+
+/* Contact */
+#contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+  resize: vertical;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #ff3c3c;
+  outline: none;
+}
+
+#contact button {
+  padding: 12px;
+  background-color: #ff3c3c;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #e62e2e;
+}
 
 
 
