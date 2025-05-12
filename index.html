@@ -1,80 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokul Mani | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
+  <header>
+    <a href="#" class="logo">Gokul Mani</a>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <a href="#" class="logo">Alex</a>
+  <section class="home">
+    <div class="home-img">
+      <img src="main.jpg" alt="Gokul's Photo">
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Gokul Mani</span></h1>
+      <h3 class="typing-text">I'm a <span id="typing"></span></h3>
+      <p>
+        A passionate junior web developer with hands-on experience in HTML, CSS, JavaScript, and Firebase. I build real-time apps and interactive UIs like chat apps, dashboards, and quiz systems. Constantly learning, I aim to create powerful web solutions using AI, ML, and blockchain.
+      </p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/gokul-m-35aba7297" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/gokulspirit" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a href="Gokul_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
 
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
+  <!-- Services Section -->
+  <!-- Services Section -->
+<section id="services">
+  <h2>What I Build</h2>
+  <p>Here are the types of solutions I specialize in, along with real projects I’ve developed:</p>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-        </nav>
-        
-    </header>
+  <div class="service-item">
+    <h3>Login Forms with Animation</h3>
+    <p>Modern login and registration interfaces with animated transitions, responsive layouts, and clean UI design.</p>
+    <a href="https://gokulspirit.github.io/Login-form-with-multiple-formats/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>Cryptocurrency Dashboards</h3>
+    <p>Live crypto tracking dashboards with API integration, modal charts, currency converters, and dark mode toggle.</p>
+    <a href="https://gokulspirit.github.io/Cryptoverse/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>Real-Time Chat Applications</h3>
+    <p>WhatsApp-like chat systems using Firebase Firestore, Google Sign-In, message editing, and AI chatbot integration.</p>
+    <a href="https://gokulspirit.github.io/Chating-application-using-firebase-firestore-/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>Streaming & Video Platforms</h3>
+    <p>Netflix-style frontend interfaces for anime streaming with clean design, hover effects, and responsive video display.</p>
+    <a href="https://gokulspirit.github.io/GOKUL-Naan_mudhalvan-Project-/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>3D Scene Development with Three.js</h3>
+    <p>Multi-window 3D environments using WebGL and Three.js for immersive experiences directly in the browser.</p>
+    <a href="https://gokulspirit.github.io/Multi-window-3d-scene-/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>Interactive DSA Quiz Systems</h3>
+    <p>Online quiz platforms featuring category-based questions, explanations, scoring systems, and Firebase integration.</p>
+    <a href="https://gokulspirit.github.io/DSA-based-quize-application-/" target="_blank">View Project</a>
+  </div>
 
+  <div class="service-item">
+    <h3>CSS Animation Effects</h3>
+    <p>Smooth scroll and hover animations using HTML, CSS, and JavaScript to enhance user interactivity and UX.</p>
+    <a href="https://gokulspirit.github.io/Scroll-down-animation-using-html-CSS-javascript-/" target="_blank">View Project</a>
+  </div>
+</section>
 
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js</li>
+      <li>Firebase, Firestore</li>
+      <li>Node.js, Express.js</li>
+      <li>Python, Flask</li>
+      <li>MySQL, MongoDB</li>
+    </ul>
+  </section>
 
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <h3>Bachelor of Computer Applications (BCA)</h3>
+    <p>Madras University (2022 - 2025)</p>
+    <h3>Higher Secondary (12th)</h3>
+    <p>GHSS, Ayappakkam (2019 - 2021)</p>
+  </section>
 
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <h3>Python Programming Intern</h3>
+    <p>Infotech RR Academy (May 2024 - July 2024)</p>
+    <ul>
+      <li>Worked with Python, focusing on real-world applications.</li>
+      <li>Developed mini-projects using core Python concepts.</li>
+    </ul>
 
+    <h3>Junior Web Developer (Freelance)</h3>
+    <p>March 2025 - Present</p>
+    <ul>
+      <li>Built several real-time web apps using Firebase and JavaScript.</li>
+      <li>Developed chat applications, dashboards, and quizzes with advanced features.</li>
+      <li>Created fully responsive and mobile-friendly websites.</li>
+    </ul>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:ggokul63589@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-
-
-
-
-
-
-
-
-
-
-
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Alex</span></h1>
-            <h3 class="typing-text">I'm a <span id="typing"></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Minus labore dolores esse. Odit similique doloribus tenetur doloremque,
-                sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#" class="btn">Hire me</a>
-        </div>
-    </section>
-
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
